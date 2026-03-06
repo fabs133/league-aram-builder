@@ -23,8 +23,6 @@ from backend.engine.augment_detector import has_stats_changed, match_augment
 from backend.diagnostics import collector as diagnostics
 
 static_data = StaticData()
-pipeline: Pipeline | None = None
-ws_clients: list[WebSocket] = []
 
 
 # -- Thread-safe game state --
@@ -33,13 +31,16 @@ ws_clients: list[WebSocket] = []
 class GameState:
     """Encapsulates all mutable augment/OCR state with an asyncio.Lock.
 
-    Replaces the former 13 module-level globals. All mutations go through
+    Replaces the former module-level globals. All mutations go through
     methods that acquire ``self._lock`` so the poll loop and WS handlers
     never see partial updates.
     """
 
     def __init__(self) -> None:
         self._lock = asyncio.Lock()
+        # Pipeline and connected clients (protected by lock)
+        self.pipeline: Pipeline | None = None
+        self.ws_clients: set[WebSocket] = set()
         # Augment choices injected by overlay / OCR
         self.augment_choices: list[str] = []
         self.chosen_augments: list[str] = []  # real augments only (max 4)
@@ -108,8 +109,7 @@ def expected_augments_for_level(level: int) -> int:
 async def lifespan(app: FastAPI):
     diagnostics.install_log_handler()
     static_data.load()
-    global pipeline
-    pipeline = Pipeline(static_data)
+    game_state.pipeline = Pipeline(static_data)
 
     poll_task = asyncio.create_task(_poll_game_loop())
     yield
@@ -243,11 +243,11 @@ def get_screenshot(filename: str):
 
 
 @app.post("/api/refresh")
-def refresh_data():
+async def refresh_data():
     """Force-refresh all cached augment and item data from APIs."""
     counts = force_refresh(static_data)
-    global pipeline
-    pipeline = Pipeline(static_data)
+    async with game_state.lock:
+        game_state.pipeline = Pipeline(static_data)
     return {"status": "refreshed", "loaded": counts}
 
 
@@ -354,7 +354,8 @@ async def game_ws(websocket: WebSocket):
     Server pushes PipelineResult on every poll cycle.
     """
     await websocket.accept()
-    ws_clients.append(websocket)
+    async with game_state.lock:
+        game_state.ws_clients.add(websocket)
     try:
         while True:
             raw = await websocket.receive_text()
@@ -379,7 +380,7 @@ async def game_ws(websocket: WebSocket):
                     await websocket.send_text(json.dumps({"error": "snapshot requires 'data' object"}))
                     continue
                 snapshot = _parse_snapshot(data)
-                result = pipeline.run(snapshot)
+                result = game_state.pipeline.run(snapshot) if game_state.pipeline else None
                 if result:
                     await websocket.send_text(json.dumps(
                         _serialize_result(result, static_data)
@@ -461,8 +462,8 @@ async def game_ws(websocket: WebSocket):
     except WebSocketDisconnect:
         pass
     finally:
-        if websocket in ws_clients:
-            ws_clients.remove(websocket)
+        async with game_state.lock:
+            game_state.ws_clients.discard(websocket)
 
 
 # -- Polling loop --
@@ -528,7 +529,7 @@ async def _poll_game_loop(interval: float | None = None):
     logger.info("Poll loop started (interval=%.1fs)", interval)
     while True:
         try:
-            clients_count = len(ws_clients)
+            clients_count = len(game_state.ws_clients)
             if clients_count > 0:
                 raw = get_raw_game_data()
                 if raw:
@@ -657,7 +658,7 @@ async def _poll_game_loop(interval: float | None = None):
                     snapshot.augment_choices = list(game_state.augment_choices)
                     snapshot.chosen_augments = list(game_state.chosen_augments)
 
-                    result = pipeline.run(snapshot)
+                    result = game_state.pipeline.run(snapshot) if game_state.pipeline else None
                     if result:
                         payload = json.dumps(
                             _serialize_result(result, static_data, snapshot)
@@ -691,12 +692,19 @@ async def _poll_game_loop(interval: float | None = None):
 async def _broadcast(message: str) -> None:
     """Send a message to all connected WebSocket clients."""
     diagnostics.record_ws_message("outbound", message)
-    for client in list(ws_clients):
+    # Copy client set under lock, then send outside to avoid holding lock during I/O
+    async with game_state.lock:
+        clients = set(game_state.ws_clients)
+    dead: list[WebSocket] = []
+    for client in clients:
         try:
             await client.send_text(message)
         except Exception:
-            if client in ws_clients:
-                ws_clients.remove(client)
+            dead.append(client)
+    if dead:
+        async with game_state.lock:
+            for client in dead:
+                game_state.ws_clients.discard(client)
 
 
 async def _try_stat_delta_match(snapshot: GameSnapshot) -> None:

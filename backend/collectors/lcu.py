@@ -43,7 +43,7 @@ def get_champ_select_session(lcu: requests.Session) -> dict | None:
     try:
         r = lcu.get(f"{lcu.base_url}/lol-champ-select/v1/session", timeout=1)
         return r.json() if r.status_code == 200 else None
-    except Exception:
+    except (requests.RequestException, ValueError):
         return None
 
 

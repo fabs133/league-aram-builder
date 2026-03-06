@@ -13,6 +13,21 @@ logger = logging.getLogger("aram-oracle.config")
 
 CONFIG_PATH = Path.home() / ".aram-oracle" / "config.toml"
 
+# Expected types for each config key (used for validation on load)
+_TYPE_SPECS: dict[str, type | tuple[type, ...]] = {
+    "match_threshold": (int, float),
+    "hash_change_threshold": (int, float),
+    "confidence_threshold": (int, float),
+    "confidence_gap": (int, float),
+    "zero_delta_threshold": (int, float),
+    "overlay_width": int,
+    "poll_interval": (int, float),
+    "port": int,
+    "github_token": str,
+    "github_repo": str,
+    "ocr_region": list,
+}
+
 DEFAULTS: dict = {
     # OCR thresholds
     "match_threshold": 65,
@@ -73,14 +88,21 @@ class Config:
 
             _SENSITIVE_KEYS = {"github_token"}
             for key, value in flat.items():
-                if key in DEFAULTS:
-                    self._data[key] = value
-                    display = "***" if key in _SENSITIVE_KEYS else value
-                    logger.info("Config override: %s = %s", key, display)
-                else:
+                if key not in DEFAULTS:
                     logger.warning("Unknown config key: %s", key)
+                    continue
+                expected = _TYPE_SPECS.get(key)
+                if expected and not isinstance(value, expected):
+                    logger.warning(
+                        "Config key %s: expected %s, got %s — using default",
+                        key, expected, type(value).__name__,
+                    )
+                    continue
+                self._data[key] = value
+                display = "***" if key in _SENSITIVE_KEYS else value
+                logger.info("Config override: %s = %s", key, display)
 
-        except Exception as e:
+        except (OSError, tomllib.TOMLDecodeError) as e:
             logger.error("Failed to load config from %s: %s", config_path, e)
 
     def get(self, key: str, default=None):

@@ -74,6 +74,23 @@ def _launch_overlay():
     webbrowser.open(OVERLAY_URL)
 
 
+def _wait_for_server(timeout: float = 15.0) -> bool:
+    """Poll the health endpoint until the server is ready."""
+    import requests as req
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        try:
+            r = req.get("http://localhost:8765/health", timeout=0.5)
+            if r.status_code == 200:
+                logger.info("Server is ready")
+                return True
+        except req.ConnectionError:
+            pass
+        time.sleep(0.2)
+    logger.warning("Server did not become ready within %.0fs", timeout)
+    return False
+
+
 def main():
     logger.info("Starting ARAM Oracle with overlay...")
 
@@ -82,8 +99,8 @@ def main():
     server_thread.start()
     logger.info("Server starting on http://localhost:8765")
 
-    # Give the server a moment to boot
-    time.sleep(1.5)
+    # Wait for the server to be ready instead of a fixed sleep
+    _wait_for_server()
 
     # Launch the overlay (blocks until window is closed)
     _launch_overlay()

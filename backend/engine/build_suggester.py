@@ -1,5 +1,9 @@
+import logging
+
 from backend.models import ChampionMeta, AugmentData, ItemData, BuildState
 from backend.engine.scoring import score_item
+
+logger = logging.getLogger("aram-oracle.engine.build")
 
 
 def suggest_build(
@@ -36,6 +40,7 @@ def suggest_build(
     gold_to_next = 0
     if next_item is None and scored:
         gold_to_next = scored[0].cost - current_gold
+        logger.debug("%s needs %dg more for %s", champion.id, gold_to_next, scored[0].name)
 
     return BuildState(
         champion_id=champion.id,

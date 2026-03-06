@@ -335,7 +335,7 @@ def _load_augments() -> dict[str, AugmentData]:
     # Check cache
     try:
         version = _get_dd_version()
-    except Exception:
+    except (requests.RequestException, ValueError):
         version = "unknown"
 
     cache_file = CACHE_DIR / f"augments_{version}.json"
@@ -348,7 +348,7 @@ def _load_augments() -> dict[str, AugmentData]:
         r = requests.get(CD_AUGMENTS_URL, timeout=15)
         r.raise_for_status()
         augments_raw = r.json()
-    except Exception:
+    except (requests.RequestException, ValueError):
         augments_raw = []
 
     # Fetch Arena descriptions as supplementary source (match by name)
@@ -362,7 +362,7 @@ def _load_augments() -> dict[str, AugmentData]:
             adesc = arena_aug.get("desc", "")
             if aname and adesc:
                 desc_by_name[aname.lower()] = adesc
-    except Exception:
+    except (requests.RequestException, ValueError, KeyError):
         pass
 
     RARITY_MAP = {"ksilver": 1, "kgold": 2, "kprismatic": 3, "kbronze": 0}
@@ -489,7 +489,7 @@ def _load_items() -> dict[str, ItemData]:
 
     try:
         version = _get_dd_version()
-    except Exception:
+    except (requests.RequestException, ValueError):
         version = "unknown"
 
     cache_file = CACHE_DIR / f"items_{version}.json"
@@ -503,7 +503,7 @@ def _load_items() -> dict[str, ItemData]:
         r = requests.get(url, timeout=15)
         r.raise_for_status()
         raw = r.json()
-    except Exception:
+    except (requests.RequestException, ValueError):
         return {}
 
     items_raw = raw.get("data", {})
@@ -643,7 +643,7 @@ def _load_all_item_names() -> dict[str, str]:
     """Load ALL item names from DataDragon (unfiltered) for display purposes."""
     try:
         version = _get_dd_version()
-    except Exception:
+    except (requests.RequestException, ValueError):
         return {}
 
     cache_file = CACHE_DIR / f"item_names_{version}.json"
@@ -655,7 +655,7 @@ def _load_all_item_names() -> dict[str, str]:
         r = requests.get(url, timeout=15)
         r.raise_for_status()
         raw = r.json()
-    except Exception:
+    except (requests.RequestException, ValueError):
         return {}
 
     names = {

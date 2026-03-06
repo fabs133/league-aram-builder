@@ -1,3 +1,5 @@
+import logging
+
 import numpy as np
 from backend.models import (
     ChampionMeta, AugmentData, ItemData,
@@ -5,6 +7,8 @@ from backend.models import (
 )
 from backend.engine.scoring import score_augment, score_item, stat_vec
 from backend.engine.label import derive_label, derive_explanation
+
+logger = logging.getLogger("aram-oracle.engine.ranker")
 
 REROLL_THRESHOLD = 0.5
 
@@ -30,6 +34,7 @@ def rank_augments(
             if games >= 5:
                 wr_delta = (wins / games) - 0.5
                 score += wr_delta * 0.2
+                logger.debug("Winrate delta %+.3f for %s (%d/%d)", wr_delta * 0.2, aug.name, wins, games)
 
         label = derive_label(champion, aug)
         explanation = derive_explanation(champion, aug)
@@ -70,6 +75,7 @@ def should_reroll(
 
     if ratio < REROLL_THRESHOLD:
         label = recommendations[0].label
+        logger.debug("Reroll suggested: best=%.3f ceiling=%.3f ratio=%.2f", best_score, ceiling, ratio)
         return (
             True,
             f"Best option ({label[0]} · {label[1]}) scores {ratio:.0%} of your "

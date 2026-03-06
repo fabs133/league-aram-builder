@@ -69,6 +69,6 @@ def post_issue(
         else:
             logger.error("GitHub API error %d: %s", resp.status_code, resp.text[:200])
             return None
-    except Exception as e:
+    except (requests.RequestException, ValueError) as e:
         logger.error("Failed to post GitHub issue: %s", e)
         return None

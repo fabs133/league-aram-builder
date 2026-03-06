@@ -9,13 +9,27 @@ LCDA_BASE = "https://127.0.0.1:2999/liveclientdata"
 SESSION = requests.Session()
 SESSION.verify = False
 
+# Champions whose LCDA display name normalizes differently from the data key
+_CHAMPION_ALIASES = {
+    "nunu&willump": "nunu",
+    "dr.mundo": "drmundo",
+    "wukong": "monkeyking",
+    "renataglasc": "renata",
+}
+
+
+def _normalize_champion_name(raw: str) -> str:
+    """Normalize an LCDA champion name to match champions.json keys."""
+    key = raw.lower().replace(" ", "").replace("'", "")
+    return _CHAMPION_ALIASES.get(key, key)
+
 
 def get_raw_game_data() -> dict | None:
     """Returns raw API response or None if game is not running."""
     try:
         r = SESSION.get(f"{LCDA_BASE}/allgamedata", timeout=1)
         return r.json() if r.status_code == 200 else None
-    except Exception:
+    except (requests.RequestException, ValueError):
         return None
 
 
@@ -23,7 +37,7 @@ def get_active_player_name() -> str | None:
     try:
         r = SESSION.get(f"{LCDA_BASE}/activeplayer", timeout=1)
         return r.json().get("summonerName") if r.status_code == 200 else None
-    except Exception:
+    except (requests.RequestException, ValueError):
         return None
 
 
@@ -61,15 +75,12 @@ def parse_game_snapshot(raw: dict, phase: GamePhase) -> GameSnapshot:
     # Death status from allPlayers entry
     is_dead = bool(active_player.get("isDead", False))
 
-    champion_id = (
+    champion_id = _normalize_champion_name(
         active_player.get("championName", "")
-        .lower()
-        .replace(" ", "")
-        .replace("'", "")
     )
 
     enemies = [
-        p.get("championName", "").lower().replace(" ", "").replace("'", "")
+        _normalize_champion_name(p.get("championName", ""))
         for p in all_players
         if p.get("team") != active_player.get("team")
     ]

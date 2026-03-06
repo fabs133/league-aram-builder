@@ -1,7 +1,11 @@
+import logging
+
 import numpy as np
 from backend.models import StatVector, ChampionMeta, AugmentData, ItemData, ScalingSpec
 from backend.engine.role_weights import get_role_weights
 from backend.engine.scaling import compute_scaling_bonus, compute_scaling_breakdown
+
+logger = logging.getLogger("aram-oracle.engine.scoring")
 
 
 _scaling_specs: dict[str, list[ScalingSpec]] = {}
@@ -63,14 +67,22 @@ def score_augment(
     # Scaling spec bonus for indirect/proc-based augments
     specs = get_scaling_specs(augment.id)
     if specs:
-        score += compute_scaling_bonus(specs, champion, champ_vec) * tier_multiplier
+        scaling_bonus = compute_scaling_bonus(specs, champion, champ_vec) * tier_multiplier
+        score += scaling_bonus
+        logger.debug("%s scaling bonus +%.3f for %s", champion.id, scaling_bonus, augment.name)
 
     # CC-CDR synergy bonus
-    score += _cc_cdr_synergy(champion, augment)
+    cdr_bonus = _cc_cdr_synergy(champion, augment)
+    if cdr_bonus > 0:
+        logger.debug("%s CC-CDR synergy +%.3f for %s", champion.id, cdr_bonus, augment.name)
+    score += cdr_bonus
 
     # Enemy comp CC modifier
     if enemies:
-        score += _enemy_comp_cc_modifier(champion, augment, enemies)
+        cc_mod = _enemy_comp_cc_modifier(champion, augment, enemies)
+        if cc_mod != 0:
+            logger.debug("%s enemy CC modifier %+.3f for %s", champion.id, cc_mod, augment.name)
+        score += cc_mod
 
     return score
 

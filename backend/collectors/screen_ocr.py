@@ -290,7 +290,7 @@ def is_available() -> bool:
     try:
         pytesseract.get_tesseract_version()
         return True
-    except Exception as e:
+    except (OSError, ImportError) as e:
         logger.debug("Tesseract not available: %s", e)
         return False
 
@@ -324,7 +324,7 @@ def capture_full_screen(monitor_index: int = 1) -> "Image.Image | None":
 
             screenshot = sct.grab(mon)
             return Image.frombytes("RGB", screenshot.size, screenshot.bgra, "raw", "BGRX")
-    except Exception as e:
+    except (OSError, ValueError) as e:
         logger.error("Full screen capture failed: %s", e)
         return None
 
@@ -363,7 +363,7 @@ def capture_augment_region(monitor_index: int = 1) -> "Image.Image | None":
 
             screenshot = sct.grab(region)
             return Image.frombytes("RGB", screenshot.size, screenshot.bgra, "raw", "BGRX")
-    except Exception as e:
+    except (OSError, ValueError) as e:
         logger.error("Screen capture failed: %s", e)
         return None
 
@@ -410,7 +410,7 @@ def save_screenshot(
         annotated.save(str(path), "PNG")
         logger.info("Screenshot saved: %s", path)
         return path
-    except Exception as e:
+    except OSError as e:
         logger.error("Failed to save screenshot: %s", e)
         return None
 
@@ -449,7 +449,7 @@ def extract_text(img: "Image.Image") -> list[str]:
             lang="eng",
             config="--psm 6 --oem 3",
         )
-    except Exception as e:
+    except (OSError, RuntimeError) as e:
         logger.error("OCR failed: %s", e)
         return []
 

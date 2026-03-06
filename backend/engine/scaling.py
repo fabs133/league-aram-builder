@@ -20,7 +20,9 @@ def evaluate_threshold(spec: ScalingSpec, stat: float) -> float:
 
 
 def evaluate_amplifier(spec: ScalingSpec, stat: float) -> float:
-    return spec.base * stat * stat
+    # Clamp stat to 3.0 to prevent quadratic explosion on high values
+    clamped = min(stat, 3.0)
+    return spec.base * clamped * clamped
 
 
 def evaluate_passive(spec: ScalingSpec, stat: float) -> float:

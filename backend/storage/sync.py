@@ -33,5 +33,5 @@ def submit_pending(enabled: bool = False) -> int:
         r.raise_for_status()
         mark_submitted([g["id"] for g in games])
         return len(games)
-    except Exception:
+    except (requests.RequestException, ValueError):
         return 0
