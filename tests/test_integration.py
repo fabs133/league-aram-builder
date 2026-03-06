@@ -13,8 +13,10 @@ NO_GAME = patch("backend.api.server.get_raw_game_data", return_value=None)
 
 @pytest.fixture(autouse=True)
 def _patch_report_dir(tmp_path, monkeypatch):
-    """Redirect bug reports to tmp dir for all tests."""
+    """Redirect bug reports to tmp dir and reset rate limiter for all tests."""
     monkeypatch.setattr(diag, "REPORT_DIR", tmp_path)
+    import backend.api.server as srv
+    srv._last_bug_report_time = 0.0
 
 
 @NO_GAME
@@ -28,6 +30,9 @@ def test_health_endpoint(mock_lcda):
     data = resp.json()
     assert data["status"] == "ok"
     assert "champions_loaded" in data
+    assert "data_loaded" in data
+    assert "augments_loaded" in data
+    assert "items_loaded" in data
 
 
 @NO_GAME

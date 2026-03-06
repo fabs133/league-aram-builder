@@ -73,6 +73,8 @@ DESCRIPTION_KEYWORDS: dict[str, str] = {
     "resist": "shield",
     "adaptive force": "ap",
     "on-hit": "attack_speed",
+    # Movement speed maps to hp: tanky/bruiser champions that stack HP also
+    # benefit most from movement speed (closing gaps, dodging skillshots).
     "movement speed": "hp",
     "true damage": "lethality",
     "burn": "ap",
@@ -148,6 +150,9 @@ ITEM_STAT_MAP: dict[str, str] = {
 }
 
 
+_loader_logger = logging.getLogger("aram-oracle.loader")
+
+
 class StaticData:
     def __init__(self):
         self._champions: dict[str, ChampionMeta] = {}
@@ -156,6 +161,9 @@ class StaticData:
         self._items: dict[str, ItemData] = {}
         self._all_item_names: dict[str, str] = {}  # ALL item names for display
 
+    # Note: load() uses synchronous requests.get() which blocks the event
+    # loop at startup. This is acceptable for a local single-user tool
+    # since it only runs once during FastAPI lifespan init.
     def load(self) -> None:
         self._champions = _load_champions()
         all_augments = _load_augments()
@@ -175,6 +183,27 @@ class StaticData:
         from backend.engine.scoring import set_scaling_specs
         scaling = _load_scaling_specs()
         set_scaling_specs(scaling)
+
+        # Validate loaded data
+        if not self._augments:
+            _loader_logger.warning(
+                "No augments loaded — recommendations will be empty. "
+                "Check network connectivity to CommunityDragon."
+            )
+        if not self._champions:
+            _loader_logger.warning(
+                "No champions loaded — check data/champions/champions.json"
+            )
+        if not self._items:
+            _loader_logger.warning(
+                "No items loaded — build suggestions will be empty. "
+                "Check network connectivity to DataDragon."
+            )
+
+    @property
+    def loaded_ok(self) -> bool:
+        """True if all critical data was loaded successfully."""
+        return bool(self._champions and self._augments and self._items)
 
     def get_champion(self, champion_id: str) -> ChampionMeta | None:
         return self._champions.get(champion_id.lower())
@@ -501,9 +530,11 @@ def _load_items() -> dict[str, ItemData]:
         if gold.get("total", 0) < 300:
             continue
 
-        # Only include items available on SR (map 11) or ARAM (map 12)
+        # Include items available on ARAM (map 12) or SR (map 11).
+        # We include SR items too because DataDragon map data can be
+        # incomplete and most SR items are also available on ARAM.
         maps = data.get("maps", {})
-        if maps and not maps.get("11", False) and not maps.get("12", False):
+        if maps and not maps.get("12", False) and not maps.get("11", False):
             continue
 
         tags = data.get("tags", [])

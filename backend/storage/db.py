@@ -2,7 +2,7 @@ import json
 import logging
 import sqlite3
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 logger = logging.getLogger("aram-oracle.db")
 
@@ -67,7 +67,7 @@ def record_game(
                     kda.get("kills", 0),
                     kda.get("deaths", 0),
                     kda.get("assists", 0),
-                    datetime.utcnow().isoformat(),
+                    datetime.now(timezone.utc).isoformat(),
                 ),
             )
             if win is not None:

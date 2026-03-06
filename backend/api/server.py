@@ -1,6 +1,7 @@
 import asyncio
 import json
 import sys
+import time
 from pathlib import Path
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Query
 from fastapi.staticfiles import StaticFiles
@@ -151,7 +152,13 @@ if FRONTEND_DIR.exists():
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "champions_loaded": len(static_data._champions)}
+    return {
+        "status": "ok",
+        "data_loaded": static_data.loaded_ok,
+        "champions_loaded": len(static_data._champions),
+        "augments_loaded": len(static_data._augments),
+        "items_loaded": len(static_data._items),
+    }
 
 
 @app.get("/champion/{champion_id}")
@@ -227,7 +234,9 @@ def list_screenshots():
 def get_screenshot(filename: str):
     """Serve a saved screenshot."""
     ss_dir = _APP_ROOT / "data" / "screenshots"
-    path = ss_dir / filename
+    path = (ss_dir / filename).resolve()
+    if not path.is_relative_to(ss_dir.resolve()):
+        return {"error": "not found"}
     if not path.exists() or not path.suffix == ".png":
         return {"error": "not found"}
     return FileResponse(path, media_type="image/png")
@@ -276,13 +285,25 @@ class BugReportRequest(BaseModel):
     description: str = ""
 
 
+_last_bug_report_time: float = 0.0
+_BUG_REPORT_COOLDOWN = 30.0  # seconds between reports
+
+
 @app.post("/api/bug-report")
 async def create_bug_report(req: BugReportRequest | None = None):
     """Generate a bug report with recent errors, logs, WS messages, and game state.
 
     Saves locally as JSON backup and optionally posts as a GitHub issue
     (if github_token and github_repo are configured in config.toml).
+    Rate-limited to one report per 30 seconds.
     """
+    global _last_bug_report_time
+    now = time.monotonic()
+    if now - _last_bug_report_time < _BUG_REPORT_COOLDOWN:
+        remaining = int(_BUG_REPORT_COOLDOWN - (now - _last_bug_report_time))
+        return {"error": f"Please wait {remaining}s before submitting another report"}
+    _last_bug_report_time = now
+
     user_description = req.description if req else ""
 
     async with game_state.lock:
@@ -410,11 +431,19 @@ async def game_ws(websocket: WebSocket):
 
             elif msg_type == "scan_augments":
                 # Manual scan — full OCR, resets watcher hash
-                detected = await asyncio.to_thread(_run_ocr_scan_manual)
+                ids, detected = await asyncio.to_thread(_run_ocr_scan_manual)
+                async with game_state.lock:
+                    if ids:
+                        game_state.augment_choices.clear()
+                        game_state.augment_choices.extend(ids)
+                        game_state.ocr_last_detected.clear()
+                        game_state.ocr_last_detected.extend(ids)
+                        screen_watcher._frozen_hash = None
+                    choices_snapshot = list(game_state.augment_choices)
                 await websocket.send_text(json.dumps({
                     "type": "ocr_result",
                     "detected": detected,
-                    "augment_choices": list(game_state.augment_choices),
+                    "augment_choices": choices_snapshot,
                 }))
 
             elif msg_type == "toggle_ocr":
@@ -439,46 +468,43 @@ async def game_ws(websocket: WebSocket):
 # -- Polling loop --
 
 
-def _run_ocr_scan_manual() -> list[dict]:
-    """Run a full OCR scan (manual trigger, bypasses hash check)."""
+def _run_ocr_scan_manual() -> tuple[list[str], list[dict]]:
+    """Run a full OCR scan (manual trigger, bypasses hash check).
+
+    Pure function — returns (ids, detected_dicts) without mutating game_state.
+    Caller must apply results under the lock.
+    """
     augment_names = {aid: aug.name for aid, aug in static_data._augments.items()}
     augment_names.update({aid: aug.name for aid, aug in static_data._stat_anvils.items()})
     matches = detect_augments(augment_names, save=True)
 
-    if matches:
-        ids = [m[0] for m in matches]
-        game_state.augment_choices.clear()
-        game_state.augment_choices.extend(ids)
-        game_state.ocr_last_detected.clear()
-        game_state.ocr_last_detected.extend(ids)
-        # Also update the watcher's frozen hash so it tracks from here
-        screen_watcher._frozen_hash = None  # force next check() to re-freeze
-
-    return [
+    ids = [m[0] for m in matches] if matches else []
+    detected = [
         {"id": aid, "name": name, "confidence": score}
         for aid, name, score in matches
     ]
+    return ids, detected
 
 
-def _run_watcher_check() -> tuple[str, list[dict] | None]:
-    """Run the ScreenWatcher.check() — hash comparison + OCR if changed."""
-    # Include both augments and stat anvils so OCR can detect either
+def _run_watcher_check() -> tuple[str, list[str], list[dict] | None]:
+    """Run the ScreenWatcher.check() — hash comparison + OCR if changed.
+
+    Pure function — returns (action, ids, detected_dicts) without mutating
+    game_state. Caller must apply results under the lock.
+    """
     augment_names = {aid: aug.name for aid, aug in static_data._augments.items()}
     augment_names.update({aid: aug.name for aid, aug in static_data._stat_anvils.items()})
     action, matches = screen_watcher.check(augment_names, save=True)
 
     if action == "detected" and matches:
         ids = [m[0] for m in matches]
-        game_state.augment_choices.clear()
-        game_state.augment_choices.extend(ids)
-        game_state.ocr_last_detected.clear()
-        game_state.ocr_last_detected.extend(ids)
-        return (action, [
+        detected = [
             {"id": aid, "name": name, "confidence": score}
             for aid, name, score in matches
-        ])
+        ]
+        return (action, ids, detected)
 
-    return (action, None)
+    return (action, [], None)
 
 
 async def _poll_game_loop(interval: float | None = None):
@@ -601,11 +627,15 @@ async def _poll_game_loop(interval: float | None = None):
                         and ocr_available()
                     ):
                         try:
-                            action, detected = await asyncio.to_thread(
+                            action, ids, detected = await asyncio.to_thread(
                                 _run_watcher_check
                             )
                             async with game_state.lock:
                                 if action == "detected" and detected:
+                                    game_state.augment_choices.clear()
+                                    game_state.augment_choices.extend(ids)
+                                    game_state.ocr_last_detected.clear()
+                                    game_state.ocr_last_detected.extend(ids)
                                     logger.info("OCR detected augments: %s", detected)
                                     ocr_msg = json.dumps({
                                         "type": "ocr_result",
