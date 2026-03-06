@@ -1,0 +1,67 @@
+{
+  "1107": [{ "type": "on_hit", "base": 0.55, "rate_stat": "attack_speed", "note": "Twice Thrice" }],
+  "107":  [{ "type": "on_hit", "base": 0.55, "rate_stat": "attack_speed", "note": "Twice Thrice" }],
+
+  "1036": [
+    { "type": "on_hit", "base": 0.45, "rate_stat": "attack_speed", "note": "Firebrand: on-hit burn" },
+    { "type": "stacking", "base": 0.3, "rate_stat": "attack_speed", "duration_factor": 1.3, "note": "Firebrand: infinite stacking" }
+  ],
+  "36": [
+    { "type": "on_hit", "base": 0.45, "rate_stat": "attack_speed", "note": "Firebrand" },
+    { "type": "stacking", "base": 0.3, "rate_stat": "attack_speed", "duration_factor": 1.3, "note": "Firebrand" }
+  ],
+
+  "1029": [{ "type": "on_cast", "base": 0.5, "rate_stat": "cdr", "note": "Ethereal Weapon" }],
+  "29":   [{ "type": "on_cast", "base": 0.5, "rate_stat": "cdr", "note": "Ethereal Weapon" }],
+
+  "1045": [
+    { "type": "on_cast", "base": 0.5, "rate_stat": "cdr", "note": "Infernal Conduit: on-cast burn" },
+    { "type": "stacking", "base": 0.35, "rate_stat": "ap", "duration_factor": 1.4, "note": "Infernal Conduit: infinite stacking" }
+  ],
+  "45": [
+    { "type": "on_cast", "base": 0.5, "rate_stat": "cdr", "note": "Infernal Conduit" },
+    { "type": "stacking", "base": 0.35, "rate_stat": "ap", "duration_factor": 1.4, "note": "Infernal Conduit" }
+  ],
+
+  "1081": [{ "type": "stacking", "base": 0.4, "rate_stat": "attack_speed", "duration_factor": 1.5, "note": "Tap Dancer" }],
+  "81":   [{ "type": "stacking", "base": 0.4, "rate_stat": "attack_speed", "duration_factor": 1.5, "note": "Tap Dancer" }],
+
+  "1136": [{ "type": "stacking", "base": 0.35, "rate_stat": "hard_cc", "duration_factor": 1.2, "note": "Slap Around: stacks on CC" }],
+  "136":  [{ "type": "stacking", "base": 0.35, "rate_stat": "hard_cc", "duration_factor": 1.2, "note": "Slap Around" }],
+
+  "1":    [{ "type": "stacking", "base": 0.45, "rate_stat": "cdr", "duration_factor": 1.3, "note": "Accelerating Sorcery" }],
+
+  "1052": [{ "type": "threshold", "base": 0.7, "rate_stat": "attack_speed", "gate_value": 0.5, "note": "Lightning Strikes" }],
+  "52":   [{ "type": "threshold", "base": 0.7, "rate_stat": "attack_speed", "gate_value": 0.5, "note": "Lightning Strikes" }],
+
+  "1225": [{ "type": "amplifier", "base": 0.5, "rate_stat": "attack_speed", "note": "Dual Wield" }],
+  "225":  [{ "type": "amplifier", "base": 0.5, "rate_stat": "attack_speed", "note": "Dual Wield" }],
+
+  "1220": [{ "type": "amplifier", "base": 0.45, "rate_stat": "crit", "note": "Fan The Hammer" }],
+
+  "1054": [
+    { "type": "on_hit", "base": 0.4, "rate_stat": "attack_speed", "note": "Master of Duality: on-hit AP stacking" },
+    { "type": "on_cast", "base": 0.3, "rate_stat": "cdr", "note": "Master of Duality: on-cast AD stacking" }
+  ],
+  "54": [
+    { "type": "on_hit", "base": 0.4, "rate_stat": "attack_speed", "note": "Master of Duality" },
+    { "type": "on_cast", "base": 0.3, "rate_stat": "cdr", "note": "Master of Duality" }
+  ],
+
+  "1046": [{ "type": "passive", "base": 0.5, "rate_stat": "hp", "note": "Infernal Soul: damage aura" }],
+  "46":   [{ "type": "passive", "base": 0.5, "rate_stat": "hp", "note": "Infernal Soul" }],
+
+  "1075": [
+    { "type": "passive", "base": 0.45, "rate_stat": "hp", "note": "Slow Cooker: proximity burn" },
+    { "type": "stacking", "base": 0.3, "rate_stat": "hp", "duration_factor": 1.3, "note": "Slow Cooker: infinite stacking" }
+  ],
+  "75": [
+    { "type": "passive", "base": 0.45, "rate_stat": "hp", "note": "Slow Cooker" },
+    { "type": "stacking", "base": 0.3, "rate_stat": "hp", "duration_factor": 1.3, "note": "Slow Cooker" }
+  ],
+
+  "357":  [{ "type": "amplifier", "base": 0.4, "rate_stat": "attack_speed", "note": "Hybrid: alternating attack/ability amp" }],
+
+  "1086": [{ "type": "on_hit", "base": 0.6, "rate_stat": "ad", "note": "Trueshot Prodigy: auto-fires on ranged hit" }],
+  "86":   [{ "type": "on_hit", "base": 0.6, "rate_stat": "ad", "note": "Trueshot Prodigy" }]
+}

@@ -1,0 +1,53 @@
+{
+  "activePlayer": {
+    "summonerName": "TestPlayer",
+    "currentGold": 1500,
+    "level": 10
+  },
+  "allPlayers": [
+    {
+      "summonerName": "TestPlayer",
+      "championName": "Lux",
+      "team": "ORDER",
+      "items": [
+        {"itemID": 3089, "displayName": "Rabadon's Deathcap"},
+        {"itemID": 3020, "displayName": "Sorcerer's Shoes"}
+      ]
+    },
+    {
+      "summonerName": "Ally1",
+      "championName": "Jinx",
+      "team": "ORDER",
+      "items": []
+    },
+    {
+      "summonerName": "Ally2",
+      "championName": "Thresh",
+      "team": "ORDER",
+      "items": []
+    },
+    {
+      "summonerName": "Enemy1",
+      "championName": "Garen",
+      "team": "CHAOS",
+      "items": []
+    },
+    {
+      "summonerName": "Enemy2",
+      "championName": "Vi",
+      "team": "CHAOS",
+      "items": []
+    },
+    {
+      "summonerName": "Enemy3",
+      "championName": "Ahri",
+      "team": "CHAOS",
+      "items": []
+    }
+  ],
+  "gameData": {
+    "gameId": "test-game-001",
+    "gameTime": 600.5,
+    "mapName": "Map12"
+  }
+}

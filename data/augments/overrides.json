@@ -1,0 +1,10 @@
+{
+  "1081": {
+    "contribution": { "attack_speed": 0.8, "ad": 0.2 },
+    "_note": "Tap Dancer: MS stacking on attacks + MS->AS conversion, massively undervalued by keyword parsing"
+  },
+  "81": {
+    "contribution": { "attack_speed": 0.8, "ad": 0.2 },
+    "_note": "Tap Dancer (alt ID): same augment, different ID range"
+  }
+}

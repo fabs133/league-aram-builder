@@ -1,0 +1,5911 @@
+{
+  "aatrox": {
+    "name": "Aatrox",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.3,
+      "hp": 0.6,
+      "lethality": 0.3,
+      "pen": 0.2,
+      "crit": 0.1,
+      "cdr": 0.5,
+      "heal_power": 0.4,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "The Darkin Blade",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 12.0,
+          "aoe": true
+        },
+        {
+          "name": "Infernal Chains",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 20.0
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "ahri": {
+    "name": "Ahri",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.24,
+      "attack_speed": 0.06,
+      "hp": 0.14,
+      "lethality": 0.21,
+      "pen": 0.6,
+      "crit": 0.03,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.17,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Charm",
+          "cc_type": "charm",
+          "hard": true,
+          "base_duration": 1.4,
+          "cooldown": 12.0
+        }
+      ],
+      "total_hard_cc_sec": 1.4,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "akali": {
+    "name": "Akali",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.3,
+      "attack_speed": 0.2,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.5,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.3,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.04
+    }
+  },
+  "akshan": {
+    "name": "Akshan",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.55,
+      "hp": 0.1,
+      "lethality": 0.35,
+      "pen": 0.3,
+      "crit": 0.59,
+      "cdr": 0.23,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.3,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.04
+    },
+    "notes": "Tags: Marksman, Assassin"
+  },
+  "alistar": {
+    "name": "Alistar",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.2,
+      "hard_cc": 0.9,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Pulverize",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 15.0,
+          "aoe": true
+        },
+        {
+          "name": "Headbutt",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "ambessa": {
+    "name": "Ambessa",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.3,
+      "hp": 0.4,
+      "lethality": 0.3,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Public Execution",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "amumu": {
+    "name": "Amumu",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.3,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.7,
+      "soft_cc": 0.1,
+      "shield": 0.36
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Bandage Toss",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 10.0
+        },
+        {
+          "name": "Curse of the Sad Mummy",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "anivia": {
+    "name": "Anivia",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.5,
+      "soft_cc": 0.5,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Flash Frost",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.1,
+          "cooldown": 10.0,
+          "aoe": true
+        },
+        {
+          "name": "Glacial Storm",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 99.0,
+          "cooldown": 4.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.1,
+      "total_soft_cc_sec": 99.0,
+      "cc_uptime_rating": 0.5
+    }
+  },
+  "annie": {
+    "name": "Annie",
+    "stats": {
+      "ap": 0.95,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.15,
+      "hard_cc": 0.7,
+      "soft_cc": 0.23,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Pyromania",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 0.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.35
+    }
+  },
+  "aphelios": {
+    "name": "Aphelios",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.9,
+      "attack_speed": 0.6,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.7,
+      "cdr": 0.1,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Gravitum",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 9.0,
+          "aoe": true
+        },
+        {
+          "name": "Gravitum",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 3.5,
+          "cooldown": 0.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 3.5,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "ashe": {
+    "name": "Ashe",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.8,
+      "attack_speed": 0.6,
+      "hp": 0.16,
+      "lethality": 0.14,
+      "pen": 0.24,
+      "crit": 0.7,
+      "cdr": 0.2,
+      "heal_power": 0.15,
+      "hard_cc": 0.5,
+      "soft_cc": 0.6,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Enchanted Crystal Arrow",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 3.5,
+          "cooldown": 80.0,
+          "aoe": true
+        },
+        {
+          "name": "Frost Shot",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 0.0
+        }
+      ],
+      "total_hard_cc_sec": 3.5,
+      "total_soft_cc_sec": 99.0,
+      "cc_uptime_rating": 0.5
+    }
+  },
+  "aurelionsol": {
+    "name": "Aurelion Sol",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Singularity",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 12.0,
+          "aoe": true
+        },
+        {
+          "name": "Falling Star",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "aurora": {
+    "name": "Aurora",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.24,
+      "attack_speed": 0.06,
+      "hp": 0.14,
+      "lethality": 0.21,
+      "pen": 0.5,
+      "crit": 0.03,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.4,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Between Worlds",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "The Weirding",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "azir": {
+    "name": "Azir",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.24,
+      "attack_speed": 0.4,
+      "hp": 0.14,
+      "lethality": 0.06,
+      "pen": 0.5,
+      "crit": 0.24,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.17,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Emperor's Divide",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "bard": {
+    "name": "Bard",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.3,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.3,
+      "hard_cc": 0.6,
+      "soft_cc": 0.3,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Cosmic Binding",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.8,
+          "cooldown": 11.0
+        },
+        {
+          "name": "Tempered Fate",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 4.3,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "belveth": {
+    "name": "Bel'Veth",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.8,
+      "hp": 0.4,
+      "lethality": 0.3,
+      "pen": 0.2,
+      "crit": 0.1,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Royal Maelstrom",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 20.0
+        }
+      ],
+      "total_hard_cc_sec": 0.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "blitzcrank": {
+    "name": "Blitzcrank",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.72,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.56,
+      "heal_power": 0.15,
+      "hard_cc": 0.47,
+      "soft_cc": 0.3,
+      "shield": 0.36
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 1.4,
+      "total_soft_cc_sec": 0.9,
+      "cc_uptime_rating": 0.19
+    },
+    "notes": "Tags: Tank, Support"
+  },
+  "brand": {
+    "name": "Brand",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.6,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.15,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Sear",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 8.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "braum": {
+    "name": "Braum",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.7,
+      "soft_cc": 0.3,
+      "shield": 0.5
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Concussive Blows",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 0.0
+        },
+        {
+          "name": "Glacial Fissure",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "briar": {
+    "name": "Briar",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.5,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.2,
+      "heal_power": 0.3,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Certain Death",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0
+        },
+        {
+          "name": "Chilling Scream",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "caitlyn": {
+    "name": "Caitlyn",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.9,
+      "attack_speed": 0.5,
+      "hp": 0.1,
+      "lethality": 0.3,
+      "pen": 0.3,
+      "crit": 0.8,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Yordle Snap Trap",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 30.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "camille": {
+    "name": "Camille",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.4,
+      "hp": 0.4,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Hookshot",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 16.0
+        },
+        {
+          "name": "Hextech Ultimatum",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 2.5,
+          "cooldown": 100.0
+        }
+      ],
+      "total_hard_cc_sec": 3.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "cassiopeia": {
+    "name": "Cassiopeia",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.1,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.4,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Petrifying Gaze",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Miasma",
+          "cc_type": "ground",
+          "hard": false,
+          "base_duration": 5.0,
+          "cooldown": 18.0,
+          "aoe": true
+        },
+        {
+          "name": "Noxious Blast",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 0.0,
+          "cooldown": 3.5
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 5.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "chogath": {
+    "name": "Cho'Gath",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.9,
+      "lethality": 0.0,
+      "pen": 0.2,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.3,
+      "shield": 0.21
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Rupture",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 7.0,
+          "aoe": true
+        },
+        {
+          "name": "Feral Scream",
+          "cc_type": "silence",
+          "hard": false,
+          "base_duration": 1.6,
+          "cooldown": 13.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 1.6,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "corki": {
+    "name": "Corki",
+    "stats": {
+      "ap": 0.26,
+      "ad": 0.56,
+      "attack_speed": 0.49,
+      "hp": 0.11,
+      "lethality": 0.14,
+      "pen": 0.38,
+      "crit": 0.56,
+      "cdr": 0.32,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.13,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.4,
+      "total_soft_cc_sec": 0.4,
+      "cc_uptime_rating": 0.06
+    },
+    "notes": "Tags: Marksman, Mage"
+  },
+  "darius": {
+    "name": "Darius",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.2,
+      "hp": 0.7,
+      "lethality": 0.21,
+      "pen": 0.3,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.29,
+      "soft_cc": 0.3,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Apprehend",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 24.0,
+          "aoe": true
+        },
+        {
+          "name": "Crippling Strike",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 5.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "diana": {
+    "name": "Diana",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.73,
+      "attack_speed": 0.3,
+      "hp": 0.3,
+      "lethality": 0.42,
+      "pen": 0.5,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Moonfall",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "draven": {
+    "name": "Draven",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.9,
+      "attack_speed": 0.5,
+      "hp": 0.1,
+      "lethality": 0.3,
+      "pen": 0.3,
+      "crit": 0.6,
+      "cdr": 0.1,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Stand Aside",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 18.0
+        },
+        {
+          "name": "Stand Aside",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 18.0
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "drmundo": {
+    "name": "Dr. Mundo",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.4,
+      "attack_speed": 0.16,
+      "hp": 0.9,
+      "lethality": 0.09,
+      "pen": 0.13,
+      "crit": 0.03,
+      "cdr": 0.3,
+      "heal_power": 0.5,
+      "hard_cc": 0.41,
+      "soft_cc": 0.2,
+      "shield": 0.24
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Infected Bonesaw",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 4.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "ekko": {
+    "name": "Ekko",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.56,
+      "attack_speed": 0.2,
+      "hp": 0.11,
+      "lethality": 0.49,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Parallel Convergence",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.25,
+          "cooldown": 22.0,
+          "aoe": true
+        },
+        {
+          "name": "Timewinder",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 9.0
+        }
+      ],
+      "total_hard_cc_sec": 2.25,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "elise": {
+    "name": "Elise",
+    "stats": {
+      "ap": 0.8,
+      "ad": 0.56,
+      "attack_speed": 0.14,
+      "hp": 0.11,
+      "lethality": 0.49,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.13,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Cocoon",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.6,
+          "cooldown": 12.0
+        }
+      ],
+      "total_hard_cc_sec": 1.6,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "evelynn": {
+    "name": "Evelynn",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.56,
+      "attack_speed": 0.14,
+      "hp": 0.11,
+      "lethality": 0.2,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.13,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Allure",
+          "cc_type": "charm",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "ezreal": {
+    "name": "Ezreal",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.7,
+      "attack_speed": 0.3,
+      "hp": 0.11,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.56,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.13,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.4,
+      "total_soft_cc_sec": 0.4,
+      "cc_uptime_rating": 0.06
+    }
+  },
+  "fiddlesticks": {
+    "name": "Fiddlesticks",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Terrify",
+          "cc_type": "fear",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 15.0
+        },
+        {
+          "name": "Reap",
+          "cc_type": "silence",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 10.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "fiora": {
+    "name": "Fiora",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.9,
+      "attack_speed": 0.3,
+      "hp": 0.3,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.2,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Riposte",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 24.0
+        },
+        {
+          "name": "Riposte",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 24.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "fizz": {
+    "name": "Fizz",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.77,
+      "attack_speed": 0.23,
+      "hp": 0.25,
+      "lethality": 0.58,
+      "pen": 0.5,
+      "crit": 0.1,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.03
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Chum the Waters",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "galio": {
+    "name": "Galio",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.7,
+      "lethality": 0.0,
+      "pen": 0.3,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.7,
+      "soft_cc": 0.1,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Justice Punch",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 12.0
+        },
+        {
+          "name": "Shield of Durand",
+          "cc_type": "taunt",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 18.0,
+          "aoe": true
+        },
+        {
+          "name": "Hero's Entrance",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 180.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 3.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "gangplank": {
+    "name": "Gangplank",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.3,
+      "hp": 0.6,
+      "lethality": 0.3,
+      "pen": 0.2,
+      "crit": 0.1,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.6,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.07
+    },
+    "notes": "Tags: Fighter"
+  },
+  "garen": {
+    "name": "Garen",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.5,
+      "attack_speed": 0.2,
+      "hp": 0.9,
+      "lethality": 0.3,
+      "pen": 0.2,
+      "crit": 0.3,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.29,
+      "soft_cc": 0.2,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Decisive Strike",
+          "cc_type": "silence",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 8.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "gnar": {
+    "name": "Gnar",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.55,
+      "attack_speed": 0.24,
+      "hp": 0.69,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.43,
+      "heal_power": 0.0,
+      "hard_cc": 0.29,
+      "soft_cc": 0.16,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.9,
+      "total_soft_cc_sec": 0.5,
+      "cc_uptime_rating": 0.11
+    },
+    "notes": "Tags: Fighter, Tank"
+  },
+  "gragas": {
+    "name": "Gragas",
+    "stats": {
+      "ap": 0.6,
+      "ad": 0.49,
+      "attack_speed": 0.21,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.3,
+      "crit": 0.07,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Body Slam",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 14.0
+        },
+        {
+          "name": "Explosive Cask",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 80.0,
+          "aoe": true
+        },
+        {
+          "name": "Barrel Roll",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 10.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "graves": {
+    "name": "Graves",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.3,
+      "hp": 0.3,
+      "lethality": 0.5,
+      "pen": 0.3,
+      "crit": 0.4,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Smoke Screen",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 4.0,
+          "cooldown": 24.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 4.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "gwen": {
+    "name": "Gwen",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.7,
+      "attack_speed": 0.5,
+      "hp": 0.3,
+      "lethality": 0.3,
+      "pen": 0.4,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Needlework",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 80.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "hecarim": {
+    "name": "Hecarim",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.2,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.2,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Onslaught of Shadows",
+          "cc_type": "fear",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Devastating Charge",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 20.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "heimerdinger": {
+    "name": "Heimerdinger",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "CH-2 Electron Storm Grenade",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 11.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "hwei": {
+    "name": "Hwei",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.3,
+      "soft_cc": 0.4,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Spiraling Despair",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Grim Visage",
+          "cc_type": "fear",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 18.0
+        }
+      ],
+      "total_hard_cc_sec": 3.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "illaoi": {
+    "name": "Illaoi",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.24,
+      "hp": 0.8,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.3,
+      "hard_cc": 0.29,
+      "soft_cc": 0.16,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.9,
+      "total_soft_cc_sec": 0.5,
+      "cc_uptime_rating": 0.11
+    }
+  },
+  "irelia": {
+    "name": "Irelia",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.6,
+      "hp": 0.3,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Vanguard's Edge",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Flawless Duet",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 16.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "ivern": {
+    "name": "Ivern",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.3,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.7
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Rootcaller",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.2,
+          "cooldown": 12.0
+        },
+        {
+          "name": "Daisy!",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 120.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.2,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "janna": {
+    "name": "Janna",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.5,
+      "hard_cc": 0.5,
+      "soft_cc": 0.4,
+      "shield": 0.8
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Howling Gale",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 12.0,
+          "aoe": true
+        },
+        {
+          "name": "Monsoon",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 130.0,
+          "aoe": true
+        },
+        {
+          "name": "Zephyr",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 8.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "jarvaniv": {
+    "name": "Jarvan IV",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.24,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.5,
+      "soft_cc": 0.2,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Demacian Standard + Dragon Strike",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 12.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "jax": {
+    "name": "Jax",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.6,
+      "hp": 0.5,
+      "lethality": 0.3,
+      "pen": 0.2,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Counter Strike",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 14.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "jayce": {
+    "name": "Jayce",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.73,
+      "attack_speed": 0.42,
+      "hp": 0.45,
+      "lethality": 0.27,
+      "pen": 0.23,
+      "crit": 0.31,
+      "cdr": 0.34,
+      "heal_power": 0.0,
+      "hard_cc": 0.17,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.07
+    },
+    "notes": "Tags: Fighter, Marksman"
+  },
+  "jhin": {
+    "name": "Jhin",
+    "stats": {
+      "ap": 0.26,
+      "ad": 0.9,
+      "attack_speed": 0.1,
+      "hp": 0.11,
+      "lethality": 0.4,
+      "pen": 0.38,
+      "crit": 0.6,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.4,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Deadly Flourish",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 14.0
+        },
+        {
+          "name": "Captive Audience",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 2.0,
+          "aoe": true
+        },
+        {
+          "name": "Curtain Call",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 0.5,
+          "cooldown": 100.0
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 2.5,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "jinx": {
+    "name": "Jinx",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.7,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.9,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Flame Chompers!",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 18.0
+        },
+        {
+          "name": "Zap!",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 6.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "kaisa": {
+    "name": "Kai'Sa",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.7,
+      "attack_speed": 0.7,
+      "hp": 0.11,
+      "lethality": 0.14,
+      "pen": 0.3,
+      "crit": 0.56,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.13,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.4,
+      "total_soft_cc_sec": 0.4,
+      "cc_uptime_rating": 0.06
+    }
+  },
+  "kalista": {
+    "name": "Kalista",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.8,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.8,
+      "cdr": 0.1,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Fate's Call",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "karma": {
+    "name": "Karma",
+    "stats": {
+      "ap": 0.7,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.3,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.15,
+      "hard_cc": 0.3,
+      "soft_cc": 0.4,
+      "shield": 0.6
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Focused Resolve",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 12.0
+        },
+        {
+          "name": "Inner Flame",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 7.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "karthus": {
+    "name": "Karthus",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.55,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.6,
+      "total_soft_cc_sec": 0.6,
+      "cc_uptime_rating": 0.09
+    },
+    "notes": "Tags: Mage"
+  },
+  "kassadin": {
+    "name": "Kassadin",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.56,
+      "attack_speed": 0.14,
+      "hp": 0.2,
+      "lethality": 0.49,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Null Sphere",
+          "cc_type": "silence",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 11.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "katarina": {
+    "name": "Katarina",
+    "stats": {
+      "ap": 0.8,
+      "ad": 0.4,
+      "attack_speed": 0.2,
+      "hp": 0.11,
+      "lethality": 0.2,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.13,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.4,
+      "total_soft_cc_sec": 0.4,
+      "cc_uptime_rating": 0.06
+    }
+  },
+  "kayle": {
+    "name": "Kayle",
+    "stats": {
+      "ap": 0.7,
+      "ad": 0.5,
+      "attack_speed": 0.8,
+      "hp": 0.2,
+      "lethality": 0.06,
+      "pen": 0.5,
+      "crit": 0.3,
+      "cdr": 0.3,
+      "heal_power": 0.4,
+      "hard_cc": 0.17,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Radiant Blast",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 12.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "kayn": {
+    "name": "Kayn",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.73,
+      "attack_speed": 0.27,
+      "hp": 0.45,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.37,
+      "heal_power": 0.0,
+      "hard_cc": 0.17,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.07
+    },
+    "notes": "Tags: Fighter, Assassin"
+  },
+  "kennen": {
+    "name": "Kennen",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.2,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Mark of the Storm",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 0.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "khazix": {
+    "name": "Kha'Zix",
+    "stats": {
+      "ap": 0.2,
+      "ad": 0.9,
+      "attack_speed": 0.2,
+      "hp": 0.1,
+      "lethality": 0.8,
+      "pen": 0.3,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Void Spike",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 9.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "kindred": {
+    "name": "Kindred",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.6,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.5,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Mounting Dread",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "kled": {
+    "name": "Kled",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.3,
+      "hp": 0.5,
+      "lethality": 0.3,
+      "pen": 0.2,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Bear Trap on a Rope",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 11.0
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "kogmaw": {
+    "name": "Kog'Maw",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.5,
+      "attack_speed": 0.8,
+      "hp": 0.11,
+      "lethality": 0.14,
+      "pen": 0.4,
+      "crit": 0.56,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Void Ooze",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 12.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "ksante": {
+    "name": "K'Sante",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.5,
+      "attack_speed": 0.16,
+      "hp": 0.8,
+      "lethality": 0.09,
+      "pen": 0.13,
+      "crit": 0.03,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.5,
+      "soft_cc": 0.24,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Footwork",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 9.0
+        },
+        {
+          "name": "All Out",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 100.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "leblanc": {
+    "name": "LeBlanc",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.56,
+      "attack_speed": 0.14,
+      "hp": 0.11,
+      "lethality": 0.1,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Ethereal Chains",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "leesin": {
+    "name": "Lee Sin",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.27,
+      "hp": 0.4,
+      "lethality": 0.3,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Dragon's Rage",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "leona": {
+    "name": "Leona",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.15,
+      "hard_cc": 0.9,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Shield of Daybreak",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 5.0
+        },
+        {
+          "name": "Zenith Blade",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 12.0
+        },
+        {
+          "name": "Solar Flare",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 3.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.45
+    }
+  },
+  "lillia": {
+    "name": "Lillia",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.49,
+      "attack_speed": 0.21,
+      "hp": 0.3,
+      "lethality": 0.21,
+      "pen": 0.4,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Lilting Lullaby",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Swirlseed",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 3.0,
+          "cooldown": 18.0
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 3.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "lissandra": {
+    "name": "Lissandra",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.0,
+      "hard_cc": 0.7,
+      "soft_cc": 0.4,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Ring of Frost",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 12.0,
+          "aoe": true
+        },
+        {
+          "name": "Frozen Tomb",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Ice Shard",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 8.0
+        }
+      ],
+      "total_hard_cc_sec": 3.0,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.4
+    }
+  },
+  "lucian": {
+    "name": "Lucian",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.9,
+      "attack_speed": 0.4,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.5,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.3,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.04
+    }
+  },
+  "lulu": {
+    "name": "Lulu",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.0,
+      "attack_speed": 0.2,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.35,
+      "hard_cc": 0.4,
+      "soft_cc": 0.4,
+      "shield": 0.7
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Wild Growth",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Whimsy",
+          "cc_type": "polymorph",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 17.0
+        },
+        {
+          "name": "Glitterlance",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 7.0
+        }
+      ],
+      "total_hard_cc_sec": 2.25,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "lux": {
+    "name": "Lux",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.6,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.15,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Light Binding",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 10.0
+        },
+        {
+          "name": "Lucent Singularity",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 10.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "malphite": {
+    "name": "Malphite",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.3,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.7,
+      "soft_cc": 0.3,
+      "shield": 0.21
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Unstoppable Force",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Ground Slam",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 3.0,
+          "cooldown": 7.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 3.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "malzahar": {
+    "name": "Malzahar",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Nether Grasp",
+          "cc_type": "suppress",
+          "hard": true,
+          "base_duration": 2.5,
+          "cooldown": 100.0
+        },
+        {
+          "name": "Call of the Void",
+          "cc_type": "silence",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 11.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "maokai": {
+    "name": "Maokai",
+    "stats": {
+      "ap": 0.3,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.2,
+      "hard_cc": 0.7,
+      "soft_cc": 0.3,
+      "shield": 0.36
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Twisted Advance",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 13.0
+        },
+        {
+          "name": "Nature's Grasp",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Bramble Smash",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 8.0
+        }
+      ],
+      "total_hard_cc_sec": 3.0,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "masteryi": {
+    "name": "Master Yi",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.7,
+      "attack_speed": 0.9,
+      "hp": 0.1,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.4,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.17,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.07
+    }
+  },
+  "mel": {
+    "name": "Mel",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Purge",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 14.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "milio": {
+    "name": "Milio",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.6,
+      "hard_cc": 0.2,
+      "soft_cc": 0.3,
+      "shield": 0.6
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Ultra Mega Fire Kick",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 12.0
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "missfortune": {
+    "name": "Miss Fortune",
+    "stats": {
+      "ap": 0.26,
+      "ad": 0.8,
+      "attack_speed": 0.3,
+      "hp": 0.11,
+      "lethality": 0.5,
+      "pen": 0.38,
+      "crit": 0.5,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Make it Rain",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 14.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "monkeyking": {
+    "name": "Wukong",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.55,
+      "attack_speed": 0.24,
+      "hp": 0.69,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.43,
+      "heal_power": 0.0,
+      "hard_cc": 0.29,
+      "soft_cc": 0.16,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.9,
+      "total_soft_cc_sec": 0.5,
+      "cc_uptime_rating": 0.11
+    },
+    "notes": "Tags: Fighter, Tank"
+  },
+  "mordekaiser": {
+    "name": "Mordekaiser",
+    "stats": {
+      "ap": 0.8,
+      "ad": 0.49,
+      "attack_speed": 0.21,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.13,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Death's Grasp",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 0.5,
+          "cooldown": 18.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 0.5,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "morgana": {
+    "name": "Morgana",
+    "stats": {
+      "ap": 0.7,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.4,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.35,
+      "hard_cc": 0.8,
+      "soft_cc": 0.1,
+      "shield": 0.5
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Dark Binding",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 3.0,
+          "cooldown": 10.0
+        },
+        {
+          "name": "Soul Shackles",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 4.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.4
+    }
+  },
+  "naafiri": {
+    "name": "Naafiri",
+    "stats": {
+      "ap": 0.14,
+      "ad": 0.9,
+      "attack_speed": 0.23,
+      "hp": 0.25,
+      "lethality": 0.7,
+      "pen": 0.27,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.1,
+      "shield": 0.03
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.4,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "nami": {
+    "name": "Nami",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.7,
+      "hard_cc": 0.6,
+      "soft_cc": 0.3,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Aqua Prison",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 10.0
+        },
+        {
+          "name": "Tidal Wave",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "nasus": {
+    "name": "Nasus",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.5,
+      "attack_speed": 0.24,
+      "hp": 0.8,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.7,
+      "heal_power": 0.0,
+      "hard_cc": 0.29,
+      "soft_cc": 0.5,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Wither",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 5.0,
+          "cooldown": 15.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 5.0,
+      "cc_uptime_rating": 0.35
+    }
+  },
+  "nautilus": {
+    "name": "Nautilus",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.9,
+      "soft_cc": 0.2,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Staggering Blow",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 0.0
+        },
+        {
+          "name": "Dredge Line",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 14.0
+        },
+        {
+          "name": "Depth Charge",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.4
+    }
+  },
+  "neeko": {
+    "name": "Neeko",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.15,
+      "hard_cc": 0.6,
+      "soft_cc": 0.2,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Tangle-Barbs",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 12.0
+        },
+        {
+          "name": "Pop Blossom",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 90.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 3.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "nidalee": {
+    "name": "Nidalee",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.56,
+      "attack_speed": 0.3,
+      "hp": 0.11,
+      "lethality": 0.49,
+      "pen": 0.4,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.3,
+      "hard_cc": 0.13,
+      "soft_cc": 0.13,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.4,
+      "total_soft_cc_sec": 0.4,
+      "cc_uptime_rating": 0.06
+    }
+  },
+  "nilah": {
+    "name": "Nilah",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.45,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.6,
+      "cdr": 0.2,
+      "heal_power": 0.2,
+      "hard_cc": 0.17,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Jubilant Veil",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 0.0,
+          "cooldown": 0.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.0
+    }
+  },
+  "nocturne": {
+    "name": "Nocturne",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.45,
+      "lethality": 0.5,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Unspeakable Horror",
+          "cc_type": "fear",
+          "hard": true,
+          "base_duration": 1.75,
+          "cooldown": 15.0
+        }
+      ],
+      "total_hard_cc_sec": 1.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "nunu": {
+    "name": "Nunu & Willump",
+    "stats": {
+      "ap": 0.6,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.7,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.3,
+      "hard_cc": 0.5,
+      "soft_cc": 0.4,
+      "shield": 0.21
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Biggest Snowball Ever!",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 14.0,
+          "aoe": true
+        },
+        {
+          "name": "Absolute Zero",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 3.0,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.75,
+      "total_soft_cc_sec": 3.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "olaf": {
+    "name": "Olaf",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.5,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.3,
+      "hard_cc": 0.29,
+      "soft_cc": 0.2,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Undertow",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 7.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "orianna": {
+    "name": "Orianna",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.15,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Shockwave",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 80.0,
+          "aoe": true
+        },
+        {
+          "name": "Command: Dissonance",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 7.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.75,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "ornn": {
+    "name": "Ornn",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.2,
+      "attack_speed": 0.1,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.7,
+      "soft_cc": 0.2,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Bellows Breath",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 12.0
+        },
+        {
+          "name": "Call of the Forge God",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 120.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "pantheon": {
+    "name": "Pantheon",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.27,
+      "hp": 0.4,
+      "lethality": 0.4,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Shield Vault",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 13.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "poppy": {
+    "name": "Poppy",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.4,
+      "attack_speed": 0.16,
+      "hp": 0.7,
+      "lethality": 0.09,
+      "pen": 0.13,
+      "crit": 0.03,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.24,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Heroic Charge",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.6,
+          "cooldown": 14.0
+        },
+        {
+          "name": "Keeper's Verdict",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Steadfast Presence",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 20.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.6,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "pyke": {
+    "name": "Pyke",
+    "stats": {
+      "ap": 0.34,
+      "ad": 0.8,
+      "attack_speed": 0.06,
+      "hp": 0.2,
+      "lethality": 0.7,
+      "pen": 0.16,
+      "crit": 0.03,
+      "cdr": 0.5,
+      "heal_power": 0.35,
+      "hard_cc": 0.5,
+      "soft_cc": 0.2,
+      "shield": 0.35
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Bone Skewer",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 10.0
+        },
+        {
+          "name": "Phantom Undertow",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 15.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "qiyana": {
+    "name": "Qiyana",
+    "stats": {
+      "ap": 0.2,
+      "ad": 0.9,
+      "attack_speed": 0.2,
+      "hp": 0.1,
+      "lethality": 0.7,
+      "pen": 0.3,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Supreme Display of Talent",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Audacity",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 7.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "quinn": {
+    "name": "Quinn",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.55,
+      "hp": 0.1,
+      "lethality": 0.35,
+      "pen": 0.3,
+      "crit": 0.59,
+      "cdr": 0.23,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.3,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.04
+    },
+    "notes": "Tags: Marksman, Assassin"
+  },
+  "rakan": {
+    "name": "Rakan",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.3,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.2,
+      "hard_cc": 0.7,
+      "soft_cc": 0.3,
+      "shield": 0.4
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Grand Entrance",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 12.0,
+          "aoe": true
+        },
+        {
+          "name": "The Quickness",
+          "cc_type": "charm",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "rammus": {
+    "name": "Rammus",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.2,
+      "attack_speed": 0.1,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.4,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Frenzying Taunt",
+          "cc_type": "taunt",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 12.0
+        },
+        {
+          "name": "Soaring Slam",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "reksai": {
+    "name": "Rek'Sai",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.4,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.16,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Unburrow",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 1.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "rell": {
+    "name": "Rell",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.72,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.56,
+      "heal_power": 0.15,
+      "hard_cc": 0.47,
+      "soft_cc": 0.3,
+      "shield": 0.36
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 1.4,
+      "total_soft_cc_sec": 0.9,
+      "cc_uptime_rating": 0.19
+    },
+    "notes": "Tags: Tank, Support"
+  },
+  "renata": {
+    "name": "Renata Glasc",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.35,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.5
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Handshake",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 16.0
+        },
+        {
+          "name": "Hostile Takeover",
+          "cc_type": "berserk",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 120.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "renekton": {
+    "name": "Renekton",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.24,
+      "hp": 0.7,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.16,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Ruthless Predator",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 13.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "rengar": {
+    "name": "Rengar",
+    "stats": {
+      "ap": 0.14,
+      "ad": 0.9,
+      "attack_speed": 0.3,
+      "hp": 0.25,
+      "lethality": 0.7,
+      "pen": 0.27,
+      "crit": 0.3,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.03
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Bola Strike",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.75,
+          "cooldown": 0.0
+        }
+      ],
+      "total_hard_cc_sec": 1.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "riven": {
+    "name": "Riven",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.9,
+      "attack_speed": 0.27,
+      "hp": 0.2,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.6,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Ki Burst",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 11.0,
+          "aoe": true
+        },
+        {
+          "name": "Broken Wings",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 13.0
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "rumble": {
+    "name": "Rumble",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.49,
+      "attack_speed": 0.21,
+      "hp": 0.3,
+      "lethality": 0.21,
+      "pen": 0.5,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.3,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Electro Harpoon",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 10.0
+        },
+        {
+          "name": "The Equalizer",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 3.5,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "ryze": {
+    "name": "Ryze",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.3,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Rune Prison",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 13.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "samira": {
+    "name": "Samira",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.9,
+      "attack_speed": 0.4,
+      "hp": 0.1,
+      "lethality": 0.35,
+      "pen": 0.3,
+      "crit": 0.6,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Wild Rush",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 20.0
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "sejuani": {
+    "name": "Sejuani",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.2,
+      "attack_speed": 0.1,
+      "hp": 0.8,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.8,
+      "soft_cc": 0.3,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Permafrost",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 1.5,
+          "aoe": true
+        },
+        {
+          "name": "Glacial Prison",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Arctic Assault",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 18.0
+        }
+      ],
+      "total_hard_cc_sec": 3.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.4
+    }
+  },
+  "senna": {
+    "name": "Senna",
+    "stats": {
+      "ap": 0.28,
+      "ad": 0.6,
+      "attack_speed": 0.21,
+      "hp": 0.24,
+      "lethality": 0.06,
+      "pen": 0.16,
+      "crit": 0.3,
+      "cdr": 0.4,
+      "heal_power": 0.5,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Last Embrace",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 11.0
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "seraphine": {
+    "name": "Seraphine",
+    "stats": {
+      "ap": 0.7,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.4,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.4
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Encore",
+          "cc_type": "charm",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 120.0,
+          "aoe": true
+        },
+        {
+          "name": "Beat Drop",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 10.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "sett": {
+    "name": "Sett",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.3,
+      "hp": 0.7,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.5,
+      "soft_cc": 0.16,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Facebreaker",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 16.0,
+          "aoe": true
+        },
+        {
+          "name": "The Show Stopper",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "shaco": {
+    "name": "Shaco",
+    "stats": {
+      "ap": 0.4,
+      "ad": 0.6,
+      "attack_speed": 0.3,
+      "hp": 0.1,
+      "lethality": 0.5,
+      "pen": 0.3,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Jack In The Box",
+          "cc_type": "fear",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 15.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "shen": {
+    "name": "Shen",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.2,
+      "attack_speed": 0.1,
+      "hp": 0.7,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.6
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Shadow Dash",
+          "cc_type": "taunt",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 18.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "shyvana": {
+    "name": "Shyvana",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.4,
+      "attack_speed": 0.5,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.3,
+      "crit": 0.07,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.13,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Dragon's Descent",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "singed": {
+    "name": "Singed",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.7,
+      "lethality": 0.0,
+      "pen": 0.3,
+      "crit": 0.0,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.5,
+      "shield": 0.21
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Fling",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 10.0
+        },
+        {
+          "name": "Mega Adhesive",
+          "cc_type": "ground",
+          "hard": false,
+          "base_duration": 3.0,
+          "cooldown": 17.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 3.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "sion": {
+    "name": "Sion",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.4,
+      "attack_speed": 0.16,
+      "hp": 0.9,
+      "lethality": 0.09,
+      "pen": 0.13,
+      "crit": 0.03,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.3,
+      "shield": 0.24
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Decimating Smash",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 10.0,
+          "aoe": true
+        },
+        {
+          "name": "Roar of the Slayer",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 11.0
+        },
+        {
+          "name": "Unstoppable Onslaught",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 100.0
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "sivir": {
+    "name": "Sivir",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.7,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.1,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.3,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.04
+    }
+  },
+  "skarner": {
+    "name": "Skarner",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.5,
+      "attack_speed": 0.3,
+      "hp": 0.7,
+      "lethality": 0.09,
+      "pen": 0.13,
+      "crit": 0.03,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.7,
+      "soft_cc": 0.3,
+      "shield": 0.24
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Impale",
+          "cc_type": "suppress",
+          "hard": true,
+          "base_duration": 1.75,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Ixtal's Impact",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 12.0
+        }
+      ],
+      "total_hard_cc_sec": 2.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "smolder": {
+    "name": "Smolder",
+    "stats": {
+      "ap": 0.26,
+      "ad": 0.8,
+      "attack_speed": 0.3,
+      "hp": 0.11,
+      "lethality": 0.14,
+      "pen": 0.38,
+      "crit": 0.4,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "MMOOOMMMM!",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "sona": {
+    "name": "Sona",
+    "stats": {
+      "ap": 0.7,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.3,
+      "crit": 0.0,
+      "cdr": 0.8,
+      "heal_power": 0.6,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Crescendo",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Song of Celerity",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 12.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "soraka": {
+    "name": "Soraka",
+    "stats": {
+      "ap": 0.5,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.3,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.8,
+      "heal_power": 1.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.4,
+      "shield": 0.1
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Starcall",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 6.0,
+          "aoe": true
+        },
+        {
+          "name": "Equinox",
+          "cc_type": "silence",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 20.0,
+          "aoe": true
+        },
+        {
+          "name": "Equinox Root",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 20.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 3.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "swain": {
+    "name": "Swain",
+    "stats": {
+      "ap": 0.8,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.5,
+      "lethality": 0.0,
+      "pen": 0.4,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.3,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Nevermove",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 13.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "sylas": {
+    "name": "Sylas",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.24,
+      "attack_speed": 0.06,
+      "hp": 0.4,
+      "lethality": 0.21,
+      "pen": 0.4,
+      "crit": 0.03,
+      "cdr": 0.5,
+      "heal_power": 0.3,
+      "hard_cc": 0.3,
+      "soft_cc": 0.17,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Abscond/Abduct",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 13.0
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "syndra": {
+    "name": "Syndra",
+    "stats": {
+      "ap": 0.95,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.6,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.5,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Scatter the Weak",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 16.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "tahmkench": {
+    "name": "Tahm Kench",
+    "stats": {
+      "ap": 0.12,
+      "ad": 0.14,
+      "attack_speed": 0.07,
+      "hp": 0.9,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.15,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Tongue Lash",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 7.0
+        },
+        {
+          "name": "Devour",
+          "cc_type": "suppress",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 20.0
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "taliyah": {
+    "name": "Taliyah",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.15,
+      "hard_cc": 0.4,
+      "soft_cc": 0.3,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Seismic Shove",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.8,
+          "cooldown": 14.0
+        },
+        {
+          "name": "Unraveled Earth",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 16.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.8,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "talon": {
+    "name": "Talon",
+    "stats": {
+      "ap": 0.2,
+      "ad": 0.9,
+      "attack_speed": 0.2,
+      "hp": 0.1,
+      "lethality": 0.8,
+      "pen": 0.2,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Rake",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 9.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "taric": {
+    "name": "Taric",
+    "stats": {
+      "ap": 0.28,
+      "ad": 0.06,
+      "attack_speed": 0.03,
+      "hp": 0.6,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.5,
+      "hard_cc": 0.5,
+      "soft_cc": 0.3,
+      "shield": 0.5
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Dazzle",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 15.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "teemo": {
+    "name": "Teemo",
+    "stats": {
+      "ap": 0.8,
+      "ad": 0.3,
+      "attack_speed": 0.6,
+      "hp": 0.11,
+      "lethality": 0.14,
+      "pen": 0.5,
+      "crit": 0.56,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.13,
+      "soft_cc": 0.5,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Blinding Dart",
+          "cc_type": "blind",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 7.0
+        },
+        {
+          "name": "Noxious Trap",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 4.0,
+          "cooldown": 0.25,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 6.0,
+      "cc_uptime_rating": 0.4
+    }
+  },
+  "thresh": {
+    "name": "Thresh",
+    "stats": {
+      "ap": 0.3,
+      "ad": 0.06,
+      "attack_speed": 0.03,
+      "hp": 0.4,
+      "lethality": 0.0,
+      "pen": 0.1,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.35,
+      "hard_cc": 0.8,
+      "soft_cc": 0.3,
+      "shield": 0.4
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Death Sentence",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 16.0
+        },
+        {
+          "name": "Flay",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 9.0,
+          "aoe": true
+        },
+        {
+          "name": "The Box",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.25,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.45
+    }
+  },
+  "tristana": {
+    "name": "Tristana",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.7,
+      "hp": 0.1,
+      "lethality": 0.35,
+      "pen": 0.3,
+      "crit": 0.7,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Buster Shot",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 80.0
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "trundle": {
+    "name": "Trundle",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.5,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.29,
+      "soft_cc": 0.4,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Pillar of Ice",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 6.0,
+          "cooldown": 22.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 6.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "tryndamere": {
+    "name": "Tryndamere",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.6,
+      "hp": 0.2,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.7,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.17,
+      "soft_cc": 0.2,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Mocking Shout",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 4.0,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 4.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "twistedfate": {
+    "name": "Twisted Fate",
+    "stats": {
+      "ap": 0.8,
+      "ad": 0.2,
+      "attack_speed": 0.3,
+      "hp": 0.14,
+      "lethality": 0.06,
+      "pen": 0.4,
+      "crit": 0.24,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Gold Card",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 6.0
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.3
+    }
+  },
+  "twitch": {
+    "name": "Twitch",
+    "stats": {
+      "ap": 0.2,
+      "ad": 0.8,
+      "attack_speed": 0.7,
+      "hp": 0.1,
+      "lethality": 0.35,
+      "pen": 0.3,
+      "crit": 0.6,
+      "cdr": 0.1,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Venom Cask",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 3.0,
+          "cooldown": 13.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 3.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "udyr": {
+    "name": "Udyr",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.5,
+      "attack_speed": 0.4,
+      "hp": 0.7,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.2
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Blazing Stampede",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 16.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "urgot": {
+    "name": "Urgot",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.4,
+      "hp": 0.7,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.2,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Disdain",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 16.0
+        },
+        {
+          "name": "Fear Beyond Death",
+          "cc_type": "suppress",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 80.0
+        }
+      ],
+      "total_hard_cc_sec": 2.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "varus": {
+    "name": "Varus",
+    "stats": {
+      "ap": 0.3,
+      "ad": 0.7,
+      "attack_speed": 0.5,
+      "hp": 0.11,
+      "lethality": 0.4,
+      "pen": 0.4,
+      "crit": 0.56,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Chain of Corruption",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 80.0,
+          "aoe": true
+        },
+        {
+          "name": "Hail of Arrows",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 4.0,
+          "cooldown": 18.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 4.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "vayne": {
+    "name": "Vayne",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.7,
+      "hp": 0.1,
+      "lethality": 0.35,
+      "pen": 0.3,
+      "crit": 0.5,
+      "cdr": 0.1,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Condemn",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 20.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "veigar": {
+    "name": "Veigar",
+    "stats": {
+      "ap": 0.95,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Event Horizon",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.5,
+          "cooldown": 18.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "velkoz": {
+    "name": "Vel'Koz",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.6,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.3,
+      "soft_cc": 0.2,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Tectonic Disruption",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 16.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "vex": {
+    "name": "Vex",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.55,
+      "crit": 0.0,
+      "cdr": 0.6,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.6,
+      "total_soft_cc_sec": 0.6,
+      "cc_uptime_rating": 0.09
+    },
+    "notes": "Tags: Mage"
+  },
+  "vi": {
+    "name": "Vi",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.3,
+      "hp": 0.6,
+      "lethality": 0.5,
+      "pen": 0.3,
+      "crit": 0.1,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.6,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Vault Breaker",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.7,
+          "cooldown": 8.0
+        },
+        {
+          "name": "Assault and Battery",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.3,
+          "cooldown": 80.0
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "viego": {
+    "name": "Viego",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.3,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.3,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Spectral Maw",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 11.0
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "viktor": {
+    "name": "Viktor",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Gravity Field",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 17.0,
+          "aoe": true
+        },
+        {
+          "name": "Gravity Field",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 17.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "vladimir": {
+    "name": "Vladimir",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.21,
+      "attack_speed": 0.09,
+      "hp": 0.4,
+      "lethality": 0.09,
+      "pen": 0.5,
+      "crit": 0.03,
+      "cdr": 0.5,
+      "heal_power": 0.3,
+      "hard_cc": 0.2,
+      "soft_cc": 0.17,
+      "shield": 0.03
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.6,
+      "total_soft_cc_sec": 0.5,
+      "cc_uptime_rating": 0.09
+    }
+  },
+  "volibear": {
+    "name": "Volibear",
+    "stats": {
+      "ap": 0.3,
+      "ad": 0.5,
+      "attack_speed": 0.4,
+      "hp": 0.8,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.2,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Thundering Smash",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 14.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "warwick": {
+    "name": "Warwick",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.6,
+      "attack_speed": 0.5,
+      "hp": 0.6,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.4,
+      "hard_cc": 0.4,
+      "soft_cc": 0.16,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Infinite Duress",
+          "cc_type": "suppress",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 80.0
+        },
+        {
+          "name": "Primal Howl",
+          "cc_type": "fear",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 15.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "xayah": {
+    "name": "Xayah",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.7,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Bladecaller",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.25,
+          "cooldown": 11.0
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.1
+    }
+  },
+  "xerath": {
+    "name": "Xerath",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.6,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.3,
+      "soft_cc": 0.3,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Shocking Orb",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.0,
+          "cooldown": 13.0
+        },
+        {
+          "name": "Eye of Destruction",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.5,
+          "cooldown": 14.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.0,
+      "total_soft_cc_sec": 2.5,
+      "cc_uptime_rating": 0.2
+    }
+  },
+  "xinzhao": {
+    "name": "Xin Zhao",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.7,
+      "attack_speed": 0.6,
+      "hp": 0.5,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.16,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Three Talon Strike",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 7.0
+        },
+        {
+          "name": "Crescent Guard",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.25,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "yasuo": {
+    "name": "Yasuo",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.45,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.9,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.3,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Last Breath",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 30.0
+        }
+      ],
+      "total_hard_cc_sec": 1.0,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.05
+    }
+  },
+  "yone": {
+    "name": "Yone",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.8,
+      "attack_speed": 0.5,
+      "hp": 0.45,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.8,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.4,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Mortal Steel",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 0.75,
+          "cooldown": 4.0
+        },
+        {
+          "name": "Fate Sealed",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 80.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.75,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "yorick": {
+    "name": "Yorick",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.6,
+      "attack_speed": 0.24,
+      "hp": 0.7,
+      "lethality": 0.21,
+      "pen": 0.17,
+      "crit": 0.07,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.29,
+      "soft_cc": 0.3,
+      "shield": 0.16
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Dark Procession",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 4.0,
+          "cooldown": 20.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 4.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "yunara": {
+    "name": "Yunara",
+    "stats": {
+      "ap": 0.0,
+      "ad": 0.8,
+      "attack_speed": 0.7,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.8,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.3,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.04
+    },
+    "notes": "Tags: Marksman"
+  },
+  "yuumi": {
+    "name": "Yuumi",
+    "stats": {
+      "ap": 0.6,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.7,
+      "heal_power": 0.8,
+      "hard_cc": 0.3,
+      "soft_cc": 0.3,
+      "shield": 0.3
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Final Chapter",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.75,
+          "cooldown": 100.0,
+          "aoe": true
+        },
+        {
+          "name": "Prowling Projectile",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.0,
+          "cooldown": 7.0
+        }
+      ],
+      "total_hard_cc_sec": 1.75,
+      "total_soft_cc_sec": 1.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "zaahen": {
+    "name": "Zaahen",
+    "stats": {
+      "ap": 0.06,
+      "ad": 0.73,
+      "attack_speed": 0.27,
+      "hp": 0.45,
+      "lethality": 0.42,
+      "pen": 0.23,
+      "crit": 0.1,
+      "cdr": 0.37,
+      "heal_power": 0.0,
+      "hard_cc": 0.17,
+      "soft_cc": 0.1,
+      "shield": 0.07
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.07
+    },
+    "notes": "Tags: Fighter, Assassin"
+  },
+  "zac": {
+    "name": "Zac",
+    "stats": {
+      "ap": 0.3,
+      "ad": 0.35,
+      "attack_speed": 0.16,
+      "hp": 0.8,
+      "lethality": 0.09,
+      "pen": 0.13,
+      "crit": 0.03,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.7,
+      "soft_cc": 0.2,
+      "shield": 0.24
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Elastic Slingshot",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 18.0,
+          "aoe": true
+        },
+        {
+          "name": "Let's Bounce!",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "zed": {
+    "name": "Zed",
+    "stats": {
+      "ap": 0.2,
+      "ad": 0.9,
+      "attack_speed": 0.2,
+      "hp": 0.1,
+      "lethality": 0.8,
+      "pen": 0.3,
+      "crit": 0.1,
+      "cdr": 0.3,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.1,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [],
+      "total_hard_cc_sec": 0.3,
+      "total_soft_cc_sec": 0.3,
+      "cc_uptime_rating": 0.04
+    }
+  },
+  "zeri": {
+    "name": "Zeri",
+    "stats": {
+      "ap": 0.2,
+      "ad": 0.7,
+      "attack_speed": 0.6,
+      "hp": 0.1,
+      "lethality": 0.2,
+      "pen": 0.3,
+      "crit": 0.5,
+      "cdr": 0.2,
+      "heal_power": 0.0,
+      "hard_cc": 0.1,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Ultrashock Laser",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.0,
+          "cooldown": 10.0
+        }
+      ],
+      "total_hard_cc_sec": 0.0,
+      "total_soft_cc_sec": 2.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "ziggs": {
+    "name": "Ziggs",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.2,
+      "soft_cc": 0.3,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Satchel Charge",
+          "cc_type": "knockback",
+          "hard": true,
+          "base_duration": 0.5,
+          "cooldown": 20.0
+        },
+        {
+          "name": "Hexplosive Minefield",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 1.5,
+          "cooldown": 16.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 0.5,
+      "total_soft_cc_sec": 1.5,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "zilean": {
+    "name": "Zilean",
+    "stats": {
+      "ap": 0.7,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.26,
+      "lethality": 0.0,
+      "pen": 0.23,
+      "crit": 0.0,
+      "cdr": 0.8,
+      "heal_power": 0.35,
+      "hard_cc": 0.4,
+      "soft_cc": 0.5,
+      "shield": 0.35
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Time Bomb",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 10.0,
+          "aoe": true
+        },
+        {
+          "name": "Time Warp",
+          "cc_type": "slow",
+          "hard": false,
+          "base_duration": 2.5,
+          "cooldown": 15.0
+        }
+      ],
+      "total_hard_cc_sec": 1.5,
+      "total_soft_cc_sec": 2.5,
+      "cc_uptime_rating": 0.25
+    }
+  },
+  "zoe": {
+    "name": "Zoe",
+    "stats": {
+      "ap": 0.9,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.15,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.4,
+      "heal_power": 0.0,
+      "hard_cc": 0.5,
+      "soft_cc": 0.2,
+      "shield": 0.0
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Sleepy Trouble Bubble",
+          "cc_type": "stun",
+          "hard": true,
+          "base_duration": 2.2,
+          "cooldown": 16.0
+        }
+      ],
+      "total_hard_cc_sec": 2.2,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.15
+    }
+  },
+  "zyra": {
+    "name": "Zyra",
+    "stats": {
+      "ap": 0.85,
+      "ad": 0.0,
+      "attack_speed": 0.0,
+      "hp": 0.2,
+      "lethality": 0.0,
+      "pen": 0.5,
+      "crit": 0.0,
+      "cdr": 0.5,
+      "heal_power": 0.15,
+      "hard_cc": 0.6,
+      "soft_cc": 0.3,
+      "shield": 0.15
+    },
+    "cc_profile": {
+      "abilities": [
+        {
+          "name": "Grasping Roots",
+          "cc_type": "root",
+          "hard": true,
+          "base_duration": 1.5,
+          "cooldown": 12.0,
+          "aoe": true
+        },
+        {
+          "name": "Stranglethorns",
+          "cc_type": "knockup",
+          "hard": true,
+          "base_duration": 1.0,
+          "cooldown": 100.0,
+          "aoe": true
+        }
+      ],
+      "total_hard_cc_sec": 2.5,
+      "total_soft_cc_sec": 0.0,
+      "cc_uptime_rating": 0.25
+    }
+  }
+}

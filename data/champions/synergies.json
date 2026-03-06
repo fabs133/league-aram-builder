@@ -1,0 +1,104 @@
+{
+  "kalista": {
+    "attack_speed": 2.0,
+    "ad": 1.2
+  },
+  "jhin": {
+    "attack_speed": 0.15,
+    "ad": 1.5,
+    "crit": 1.3
+  },
+  "veigar": {
+    "ap": 1.6
+  },
+  "senna": {
+    "lethality": 1.5,
+    "crit": 1.3
+  },
+  "kogmaw": {
+    "attack_speed": 1.8,
+    "pen": 1.3
+  },
+  "cassiopeia": {
+    "ap": 1.3,
+    "attack_speed": 1.2
+  },
+  "kayle": {
+    "attack_speed": 1.5,
+    "ap": 1.3
+  },
+  "masteryi": {
+    "attack_speed": 1.5,
+    "crit": 1.2
+  },
+  "vayne": {
+    "attack_speed": 1.6,
+    "crit": 0.8
+  },
+  "twitch": {
+    "attack_speed": 1.4,
+    "ad": 1.2
+  },
+  "jinx": {
+    "attack_speed": 1.4,
+    "crit": 1.3
+  },
+  "yasuo": {
+    "crit": 1.5,
+    "attack_speed": 1.2
+  },
+  "yone": {
+    "crit": 1.5,
+    "attack_speed": 1.2
+  },
+  "nasus": {
+    "hp": 1.3,
+    "cdr": 1.4
+  },
+  "singed": {
+    "hp": 1.4,
+    "ap": 1.2
+  },
+  "vladimir": {
+    "ap": 1.3,
+    "hp": 1.3
+  },
+  "soraka": {
+    "heal_power": 1.6,
+    "hp": 1.3
+  },
+  "sona": {
+    "heal_power": 1.4,
+    "ap": 1.3,
+    "cdr": 1.3
+  },
+  "teemo": {
+    "ap": 1.4,
+    "attack_speed": 1.2
+  },
+  "brand": {
+    "ap": 1.3,
+    "pen": 1.4
+  },
+  "katarina": {
+    "ap": 1.3,
+    "ad": 1.1
+  },
+  "tryndamere": {
+    "crit": 1.5,
+    "attack_speed": 1.3,
+    "ad": 1.2
+  },
+  "draven": {
+    "ad": 1.6,
+    "attack_speed": 1.2
+  },
+  "ashe": {
+    "attack_speed": 1.3,
+    "crit": 1.2
+  },
+  "caitlyn": {
+    "crit": 1.4,
+    "ad": 1.3
+  }
+}

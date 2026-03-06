@@ -1,0 +1,63 @@
+{
+  "name": "aram-oracle-overwolf",
+  "version": "0.1.0",
+  "productName": "ARAM Oracle",
+  "description": "Real-time ARAM Mayhem build recommender — augment scoring, item suggestions, and OCR-based augment detection.",
+  "main": "src/main.js",
+  "author": {
+    "name": "ARAM Oracle"
+  },
+  "license": "MIT",
+  "overwolf": {
+    "packages": ["overlay"]
+  },
+  "scripts": {
+    "start": "electron .",
+    "start:ow": "ow-electron .",
+    "build": "electron-builder --win",
+    "build:ow": "ow-electron-builder --win"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "electron": "^40.8.0",
+    "@overwolf/ow-electron": "39.6.0",
+    "@overwolf/ow-electron-builder": "26.0.12",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.aramoracle.app",
+    "productName": "ARAM Oracle",
+    "win": {
+      "target": "nsis",
+      "icon": "../assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false
+    },
+    "files": [
+      "src/**/*",
+      "public/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../frontend",
+        "to": "frontend"
+      },
+      {
+        "from": "../data/champions",
+        "to": "data/champions"
+      },
+      {
+        "from": "../data/augments",
+        "to": "data/augments"
+      }
+    ]
+  }
+}
